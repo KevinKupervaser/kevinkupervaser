@@ -1,0 +1,55 @@
+.notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(234, 232, 232);
+  background-color: rgb(67, 67, 67);
+  padding: 0 5rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  height: 5rem;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.notification h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.notification p {
+  margin: 0;
+}
+
+.success {
+  background-color: rgb(87, 238, 87);
+  color: rgb(43, 43, 43);
+}
+
+.error {
+  background-color: rgb(255, 97, 97);
+}
+
+@media (min-width: 768px) {
+  .notification {
+    width: 40rem;
+    left: calc(50% - 20rem);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+}
+
+@media (max-width: 450px) {
+  .notification {
+    height: 6rem;
+    padding: 0 2rem
+  }
+
+  .notification p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
