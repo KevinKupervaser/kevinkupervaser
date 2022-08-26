@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import classes from "./notification.module.css";
+import classes from "./Notification.module.css";
 import * as React from "react";
 
 interface Notification {
