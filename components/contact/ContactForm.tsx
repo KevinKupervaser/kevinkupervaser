@@ -26,7 +26,7 @@ const ContactForm = () => {
     if (requestStatus === "success" || requestStatus === "error") {
       const timer = setTimeout(() => {
         setRequestStatus(null);
-      }, 3000);
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, [requestStatus]);
@@ -80,49 +80,60 @@ const ContactForm = () => {
   return (
     <section className='max-w-[1240px] mx-auto h-screen'>
       <div className='mt-10 sm:mt-5'>
-        <h1 className='flex justify-center items-center text-3xl sm:text-4xl '>
+        <h1 className='flex justify-center items-center text-3xl sm:text-5xl font-semibold text-center text-blue-600/80'>
           Let's Work Together 💪🏻
         </h1>
       </div>
 
       <form
-        className='flex flex-col items-center justify-center bg-gray-500/20 sm:max-w-[600px] p-3 rounded-lg shadow-lg mx-auto sm:mt-[3.5%] mt-[30%] max-w-[300px]'
+        className='flex flex-col items-center justify-center bg-blue-600/70 sm:max-w-[600px] p-3 rounded-lg shadow-2xl mx-auto max-w-[300px] sm:mt-[3rem] mt-[9rem]'
         onSubmit={sendMessageHandler}
       >
         <div className='space-y-5 sm:w-[500px] w-[250px]'>
           <div className='flex flex-col text-xl space-y-2'>
-            <label htmlFor='email'>Email</label>
+            <label htmlFor='email' className='text-[1.3rem] text-white'>
+              Email
+            </label>
             <input
               type='email'
               id='email'
+              className='rounded-md'
               required
               value={enteredEmail}
               onChange={(event) => setEnteredEmail(event.target.value)}
             />
           </div>
           <div className='flex flex-col text-xl space-y-2'>
-            <label htmlFor='name'>Name</label>
+            <label htmlFor='name' className='text-[1.3rem] text-white'>
+              Name
+            </label>
             <input
               type='text'
               id='name'
               required
+              className='rounded-md'
               value={enteredName}
               onChange={(event) => setEnteredName(event.target.value)}
             />
           </div>
           <div className='flex flex-col text-xl space-y-2'>
-            <label htmlFor='message'>Message</label>
+            <label htmlFor='message' className='text-[1.3rem] text-white'>
+              Message
+            </label>
             <textarea
               id='message'
               rows={4}
               required
+              className='rounded-md'
               value={enteredMessage}
               onChange={(event) => setEnteredMessage(event.target.value)}
             ></textarea>
           </div>
         </div>
-        <div className='bg-blue-400 p-3 rounded-xl mt-5'>
-          <button className='text-white'>Send Message</button>
+        <div>
+          <button className='text-white bg-blue-400 p-3 rounded-xl mt-5 shadow-lg hover:bg-white font-semibold hover:text-blue-800 transition delay-150 ease-in-out'>
+            Send Message
+          </button>
         </div>
       </form>
       {notification && (
