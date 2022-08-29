@@ -78,15 +78,15 @@ const ContactForm = () => {
   }
 
   return (
-    <section className='max-w-[1240px] mx-auto h-screen'>
+    <section className='max-w-[1240px] mx-auto h-screen z-[-50]'>
       <div className='mt-10 sm:mt-5'>
-        <h1 className='flex justify-center items-center text-3xl sm:text-5xl font-semibold text-center text-blue-600/80'>
-          Let's Work Together 💪🏻
+        <h1 className='flex justify-center items-center text-3xl sm:text-7xl font-semibold text-center text-[#4de1ff]'>
+          Let's Start Working Together 👨‍💻
         </h1>
       </div>
 
       <form
-        className='flex flex-col items-center justify-center bg-blue-600/70 sm:max-w-[600px] p-3 rounded-lg shadow-2xl mx-auto max-w-[300px] sm:mt-[3rem] mt-[9rem]'
+        className='flex flex-col items-center justify-center bg-[#3499adbd] sm:max-w-[600px] p-3 rounded-lg shadow-2xl mx-auto max-w-[300px] sm:mt-[3rem] mt-[9rem] z-[99]'
         onSubmit={sendMessageHandler}
       >
         <div className='space-y-5 sm:w-[500px] w-[250px]'>
@@ -131,7 +131,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div>
-          <button className='text-white bg-blue-400 p-3 rounded-xl mt-5 shadow-lg hover:bg-white font-semibold hover:text-blue-800 transition delay-150 ease-in-out'>
+          <button className='text-white bg-[#4de1ff] p-3 rounded-xl mt-5 shadow-lg hover:bg-white font-semibold hover:text-[#f9be29] transition delay-150 ease-in-out'>
             Send Message
           </button>
         </div>
