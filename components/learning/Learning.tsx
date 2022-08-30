@@ -61,6 +61,7 @@ const Learning = () => {
                 href='https://codingheroes.io'
                 target={"_blank"}
                 className='hover:text-blue-900 hover:underline'
+                rel="noreferrer"
               >
                 Codingheroes.io
               </a>
@@ -83,6 +84,7 @@ const Learning = () => {
                 href='https://academind.com/'
                 target={"_blank"}
                 className='hover:text-blue-900 hover:underline'
+                rel="noreferrer"
               >
                 Academind.com
               </a>
@@ -105,6 +107,7 @@ const Learning = () => {
                 href='https://codewithmosh.com/'
                 target={"_blank"}
                 className='hover:text-blue-900 hover:underline'
+                rel="noreferrer"
               >
                 Codewithmosh.com
               </a>
