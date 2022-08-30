@@ -6,7 +6,9 @@ const Contact = () => {
   return (
     <div>
       <ContactForm />
-      <ContactFooter />
+      <footer>
+        <ContactFooter />
+      </footer>
     </div>
   );
 };

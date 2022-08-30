@@ -1,8 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/about/About";
+import ContactFooter from "../components/footer/ContactFooter";
 import Hero from "../components/hero/Hero";
+import Learning from "../components/learning/Learning";
 import ProjectCard from "../components/projects/ProjectCard";
+import Techstack from "../components/techstack/Techstack";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +18,8 @@ const Home: NextPage = () => {
 
       <Hero />
       <About />
-      {/* <ProjectCard /> */}
+      <Learning />
+      <Techstack />
     </div>
   );
 };

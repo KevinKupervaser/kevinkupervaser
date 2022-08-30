@@ -34,6 +34,7 @@ const About = () => {
       ref={sectionRef}
       className='h-screen bg-[#8cecffaf] relative z-50'
       animate={animation}
+      id='about'
     >
       <Wave />
       <div className='hidden sm:block absolute text-[10rem] md:text-[15rem] font-bold lg:top-0 left-[5rem] text-white tracking-widest opacity-30 top-[8rem] z-[-1]'>
@@ -52,7 +53,7 @@ const About = () => {
           <h2 className='font-bold text-4xl sm:text-5xl z-[50] text-[#069ebd]'>
             INTRO
           </h2>
-          <p className='text-[0.8rem] sm:text-xl max-w-[600px] tracking-wide font-semibold'>
+          <p className='text-[0.8rem] sm:text-xl max-w-[600px] tracking-wide'>
             Hi, my name is Kevin Kupervaser, I'm a Lawyer with a bachelor's
             degree from the National Northeastern University - Argentina. A
             self-taught Frontend developer thanks to the power of the Internet.

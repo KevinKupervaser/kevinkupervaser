@@ -78,7 +78,7 @@ const ContactForm = () => {
   }
 
   return (
-    <section className='max-w-[1240px] mx-auto h-screen z-[-50]'>
+    <section className='mx-auto h-screen z-[-50]'>
       <div className='mt-10 sm:mt-5'>
         <h1 className='flex justify-center items-center text-3xl sm:text-7xl font-semibold text-center text-[#4de1ff]'>
           Let's Start Working Together 👨‍💻
