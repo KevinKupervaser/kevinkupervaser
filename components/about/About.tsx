@@ -12,22 +12,21 @@ const About = () => {
     threshold: thresh,
   });
 
-  const initialAnimation = {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: { duration: 0.5 },
-  };
-
   const animation = useAnimation();
 
   React.useEffect(() => {
+    const initialAnimation = {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: { duration: 0.5 },
+    };
     if (sectionIsVisible) {
       animation.start(initialAnimation);
     } else {
       animation.start({ y: "5vh", opacity: 0, scale: 0.9 });
     }
-  }, [sectionIsVisible, animation, initialAnimation]);
+  }, [sectionIsVisible, animation]);
 
   return (
     <motion.section
