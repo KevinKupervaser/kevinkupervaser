@@ -23,7 +23,7 @@ const Learning = () => {
     } else {
       animation.start({ opacity: 0, scale: 0.5 });
     }
-  }, [imageIsVisible, animation]);
+  }, [imageIsVisible, animation, initialAnimation]);
 
   return (
     <section

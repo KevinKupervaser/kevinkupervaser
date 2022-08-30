@@ -27,7 +27,7 @@ const About = () => {
     } else {
       animation.start({ y: "5vh", opacity: 0, scale: 0.9 });
     }
-  }, [sectionIsVisible, animation]);
+  }, [sectionIsVisible, animation, initialAnimation]);
 
   return (
     <motion.section
