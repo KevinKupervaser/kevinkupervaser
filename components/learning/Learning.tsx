@@ -9,21 +9,20 @@ const Learning = () => {
     threshold: thresh,
   });
 
-  const initialAnimation = {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 0.7 },
-  };
-
   const animation = useAnimation();
 
   React.useEffect(() => {
+    const initialAnimation = {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.7 },
+    };
     if (imageIsVisible) {
       animation.start(initialAnimation);
     } else {
       animation.start({ opacity: 0, scale: 0.5 });
     }
-  }, [imageIsVisible, animation, initialAnimation]);
+  }, [imageIsVisible, animation]);
 
   return (
     <section
@@ -61,7 +60,7 @@ const Learning = () => {
                 href='https://codingheroes.io'
                 target={"_blank"}
                 className='hover:text-blue-900 hover:underline'
-                rel="noreferrer"
+                rel='noreferrer'
               >
                 Codingheroes.io
               </a>
@@ -84,7 +83,7 @@ const Learning = () => {
                 href='https://academind.com/'
                 target={"_blank"}
                 className='hover:text-blue-900 hover:underline'
-                rel="noreferrer"
+                rel='noreferrer'
               >
                 Academind.com
               </a>
@@ -107,7 +106,7 @@ const Learning = () => {
                 href='https://codewithmosh.com/'
                 target={"_blank"}
                 className='hover:text-blue-900 hover:underline'
-                rel="noreferrer"
+                rel='noreferrer'
               >
                 Codewithmosh.com
               </a>
