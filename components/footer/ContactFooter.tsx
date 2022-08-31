@@ -17,16 +17,21 @@ const ContactFooter = () => {
           </Link>
         </div>
         <div className='flex space-x-3'>
-          <Link href={"/"}>
-            <a>
-              <GithubLogo />
-            </a>
-          </Link>
-          <Link href={"/"}>
-            <a>
-              <LinkedinLogo />
-            </a>
-          </Link>
+          <a
+            href='https://github.com/KevinKupervaser'
+            target={"_blank"}
+            rel='noreferrer'
+          >
+            <GithubLogo />
+          </a>
+
+          <a
+            href='https://www.linkedin.com/in/kevin-gregori-dohrmann-kupervaser-813668202/'
+            target={"_blank"}
+            rel='noreferrer'
+          >
+            <LinkedinLogo />
+          </a>
         </div>
       </div>
     </>
