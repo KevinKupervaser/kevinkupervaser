@@ -26,7 +26,7 @@ const Experience = () => {
   }, [textIsVisible, animation]);
 
   return (
-    <section className='h-screen bg-[#8cecffaf] relative' ref={textRef}>
+    <section className='h-screen bg-[#8cecffaf] relative' ref={textRef} id='experience'>
       <motion.div
         className='hidden sm:block absolute bottom-0 left-0 z-0'
         animate={animation}

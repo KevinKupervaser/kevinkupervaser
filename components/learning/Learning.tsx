@@ -28,6 +28,7 @@ const Learning = () => {
     <section
       className='h-screen flex items-center justify-center mt-[10rem] sm:mt-0'
       ref={sectionRef}
+      id='learning'
     >
       <div className='text-center flex flex-col items-center justify-center'>
         <h2 className='text-4xl sm:text-6xl font-bold text-[#f9be29]'>
@@ -37,7 +38,7 @@ const Learning = () => {
           I've managed to learn different technologies throughout many online
           academies for example: Udemy, Academind, FrontendMasters,
           Codingheroes, Codewithmosh, Coursera and Youtube. Today I'm a web
-          developer thanks to:
+          developer thanks to this world-class teachers:
         </p>
         <motion.div
           className='flex flex-col sm:flex-row items-center justify-between sm:w-[1000px]'

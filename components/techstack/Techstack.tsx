@@ -9,7 +9,7 @@ const Techstack = () => {
   );
 
   return (
-    <section className='mt-[10rem] sm:mt-0'>
+    <section className='mt-[10rem] sm:mt-0' id='tech'>
       <div className='flex items-center justify-center'>
         <h2 className='font-bold text-6xl sm:text-[10rem] text-[#4de1ff] tracking-widest'>
           Tech-Stack
