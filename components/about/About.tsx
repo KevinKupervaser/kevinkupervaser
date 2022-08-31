@@ -39,8 +39,8 @@ const About = () => {
       <div className='hidden sm:block absolute text-[10rem] md:text-[15rem] font-bold lg:top-0 left-[5rem] text-white tracking-widest opacity-30 top-[8rem] z-[-1]'>
         ABOUT...
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 h-screen sm:place-items-center justify-items-center overflow-hidden'>
-        <div className='w-[350px] h-[350px] object-cover mt-[7rem] z-50'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 sm:place-items-center justify-items-center overflow-hidden'>
+        <div className='w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] object-cover mt-[7rem] z-50'>
           <Lottie
             animationData={animationData}
             loop={true}
@@ -49,10 +49,10 @@ const About = () => {
           />
         </div>
         <div className='text-center sm:text-left px-6 sm:px-0 sm:mr-10 sm:mt-10'>
-          <h2 className='font-bold text-4xl sm:text-5xl z-[50] text-[#069ebd]'>
+          <h2 className='font-bold text-4xl sm:text-5xl z-[50] text-[#069ebd] tracking-wide'>
             INTRO
           </h2>
-          <p className='text-[0.8rem] sm:text-xl max-w-[600px] tracking-wide'>
+          <p className='text-base max-w-[600px] mt-4 sm:text-justify'>
             Hi, my name is Kevin Kupervaser, I'm a Lawyer with a bachelor's
             degree from the National Northeastern University - Argentina. A
             self-taught Frontend developer thanks to the power of the Internet.

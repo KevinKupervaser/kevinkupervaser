@@ -30,13 +30,13 @@ const Learning = () => {
       ref={sectionRef}
     >
       <div className='text-center flex flex-col items-center justify-center'>
-        <h2 className=' text-3xl sm:text-5xl font-bold text-[#4de1ff]'>
+        <h2 className='text-4xl sm:text-6xl font-bold text-[#f9be29]'>
           Learning Resources📚
         </h2>
         <p className='text-base px-5 sm:px-0 sm:text-xl mt-5 max-w-[800px] mx-auto'>
           I've managed to learn different technologies throughout many online
           academies for example: Udemy, Academind, FrontendMasters,
-          Codingheroes, Codewithmosh, Coursera and Youtube. Today I'm a proud
+          Codingheroes, Codewithmosh, Coursera and Youtube. Today I'm a web
           developer thanks to:
         </p>
         <motion.div

@@ -8,7 +8,7 @@ interface TechstackProps {
 }
 
 const Stacks: React.FC<TechstackProps> = ({ stacks }) => {
-  const thresh = 0.9;
+  const thresh = 0.7;
 
   const { ref: stackRef, inView: stackIsVisible } = useInView({
     threshold: thresh,
@@ -37,7 +37,7 @@ const Stacks: React.FC<TechstackProps> = ({ stacks }) => {
           ref={stackRef}
           animate={animation}
           key={index}
-          className='bg-white w-[150px] h-[100px] rounded-lg shadow-lg z-[99] flex items-center justify-center'
+          className='bg-white w-[150px] h-[100px] rounded-lg shadow-lg flex items-center justify-center'
         >
           <div className='transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300'>
             <picture>

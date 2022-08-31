@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/about/About";
+import Experience from "../components/experience/Experience";
 import ContactFooter from "../components/footer/ContactFooter";
 import Hero from "../components/hero/Hero";
 import Learning from "../components/learning/Learning";
 import ProjectCard from "../components/projects/ProjectCard";
+import Projects from "../components/projects/Projects";
 import Techstack from "../components/techstack/Techstack";
 
 const Home: NextPage = () => {
@@ -20,6 +22,11 @@ const Home: NextPage = () => {
       <About />
       <Learning />
       <Techstack />
+      <Experience />
+      <Projects />
+      <footer>
+        <ContactFooter />
+      </footer>
     </div>
   );
 };
