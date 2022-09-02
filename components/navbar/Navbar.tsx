@@ -16,7 +16,7 @@ const Navbar = () => {
           {!open && <MenuIcon />}
           {open && <XIcon />}
           <div
-            className={`sm:hidden absolute top-[4.5rem] left-0 w-full h-[50vh] bg-cyan-400/10 flex flex-col items-center justify-center duration-[750ms] text-[#069ebd] text-xl gap-5 ${
+            className={`sm:hidden absolute top-[4.5rem] left-0 w-full h-[50vh] bg-[#069ebd] flex flex-col items-center justify-center duration-[750ms] text-[#f9be29] text-xl gap-5 ${
               open ? "left-[0rem]" : "left-[100%]"
             }`}
           >
